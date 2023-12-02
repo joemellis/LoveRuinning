@@ -19,11 +19,15 @@ body{
     font-family:"Lato",sans-serif;
 }
 
+
 /*----header element----*/
 header {
     background-color:blue;
 }
 
+h1{
+    font-family: "Oswald", sans-serif;
+}
 /*----main element----*/
 main {
 background-color: gold;
