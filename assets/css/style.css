@@ -53,6 +53,22 @@ background-color: gold;
 flex:1 0 auto;
 }
 
+/*----Menu id element---*/
+#menu{
+    font-size:110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+/*----target li elements within a Menu id element---*/
+#menu > li {
+   margin-bottom:1em;
+}
+
+.active{
+    boarder-bottom: 1px solid #3a3a3a;
+}
+
 /*----footer element----*/
 footer {
 background-color: red;
