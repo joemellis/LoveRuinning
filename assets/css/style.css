@@ -2,86 +2,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*----astrix element to remove default padding and margin----*/
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /*----body element----*/
-body{
-    min-height:100vh;
-    display:flex;
+body {
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
 
     /*----general page rules----*/
-    color:#3a3a3a;
-    font-family:"Lato",sans-serif;
+    color: #3a3a3a;
+    font-family: "Lato", sans-serif;
 }
 
 
 /*----header element----*/
 header {
-    background-color:#ffffff;
-    padding:0 1rem;
-    position:fixed;
-    z-index:99;
-    width:100%;
-    box-shadow:0 2px  2px #3a3a3a
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /*----header anchor element----*/
-header a{
-text-decoration:none;
-color:inherit;
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
 /*----h1 element----*/
-h1{
+h1 {
     font-family: "Oswald", sans-serif;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    color:#252525;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
 /*----main element----*/
 main {
-background-color: gold;
-
-/*----make main element take up surplus space----*/
-flex:1 0 auto;
+    background-color: gold;
+    margin-top:47px;
+    /*----make main element take up surplus space----*/
+    flex: 1 0 auto;
 }
 
 /*----Menu id element---*/
-#menu{
-    font-size:110%;
+#menu {
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
 /*----target li elements within a Menu id element---*/
-#menu > li {
-   margin-bottom:1em;
+#menu>li {
+    margin-bottom: 1em;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
 /*----drop down menu for nav elements---*/
 
-nav{
+nav {
+    position: absolute;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-
-
+    display: none;
+    top: 100%;
 }
 
+/*----nav toggle functionality----*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+#nav-toggle{
+    display:none;
+}
+.nav-toggle-label{
+    font-size:2rem;
+}
 /*----footer element----*/
 footer {
-background-color: red;
+    background-color: red;
 
 }
