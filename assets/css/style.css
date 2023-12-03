@@ -50,13 +50,17 @@ h1 {
 
 /*----main element----*/
 main {
-    background-color: lightblue;
+    
     margin-top: 47px;
     /*----make main element take up surplus space----*/
     flex: 1 0 auto;
 }
-
-
+/*----hero section---*/
+#hero{
+    height:600px;
+    width:100%;
+    background:url(../images/hero-image.webp) no-repeat center center/cover;
+}
 
 /*----Menu id element---*/
 #menu {
